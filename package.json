@@ -19,7 +19,8 @@
     "test": "vitest run",
     "build": "tsup src/index.ts --format esm --dts",
     "test:watch": "vitest",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release": "npm version minor && git push --follow-tags"
   },
   "license": "MIT",
   "repository": {
