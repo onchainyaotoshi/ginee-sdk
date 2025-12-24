@@ -1,1 +1,1 @@
-export const hello = () => "ginee sdk ready";
+export { GineeClient } from "./client/GineeClient.js";

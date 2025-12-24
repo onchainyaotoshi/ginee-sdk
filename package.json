@@ -1,32 +1,29 @@
 {
-  "name": "ginee-sdk",
+  "name": "@yaotoshi/ginee-sdk",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
   "scripts": {
     "test": "vitest run",
     "build": "tsup src/index.ts --format esm --dts",
     "test:watch": "vitest",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepublishOnly": "npm run build"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/onchainyaotoshi/ginee-sdk.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/onchainyaotoshi/ginee-sdk/issues"
   },
-  "homepage": "https://github.com/onchainyaotoshi/ginee-sdk#readme",
-  "devDependencies": {
-    "@types/node": "^25.0.3",
-    "msw": "^2.12.4",
-    "tsup": "^8.5.1",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.16"
-  },
-  "type": "module",
-  "files": ["dist", "README.md", "LICENSE"]
+  "homepage": "https://github.com/onchainyaotoshi/ginee-sdk#readme"
 }
