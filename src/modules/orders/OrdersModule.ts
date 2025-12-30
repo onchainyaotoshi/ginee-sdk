@@ -68,16 +68,10 @@ export class OrdersModule {
   }
 
   getDetailsByOrderIds(
-    orderIds: string[],
-    opts: {
-      historicalData?: boolean;
-      includedSection?: string[];
-    } = {}
+    orderIds: string[]
   ): Promise<OrderDetail[]> {
     return this.getDetails({
-      orderIds,
-      historicalData: opts.historicalData,
-      includedSection: opts.includedSection,
+      orderIds
     });
   }
 }

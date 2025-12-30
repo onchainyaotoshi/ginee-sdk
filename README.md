@@ -18,3 +18,8 @@ npm install @yaotoshi/ginee-sdk
   console.log("TOTAL:", res.length);
 })();
 ```
+
+# HOW TO RUN EXAMPLES
+```
+npx tsx ./examples/order.ts 
+```
